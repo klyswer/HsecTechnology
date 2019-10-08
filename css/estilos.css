@@ -1,0 +1,141 @@
+/* 06-10-2019 */
+/* Klyswer Oliva */
+/* General styles to HSECTECHNOLOGY website lvl1 */
+
+
+/* Clases para menú */
+.menu_font{
+    color: #134263;
+    font-weight: 700;
+    font-size: 15px;
+}
+a.menu_font:hover, a.menu_font:focus,
+button.menu_font:hover,
+button.menu_font:focus {
+  color: #0e3049;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* ___________________________________Colorear Borde__________________________ */
+.border_orange{
+  border: rgb(243, 180, 44) 2px solid;
+}
+/* ___________________________________Colorear Borde__________________________ */
+
+
+/* Before menu bar */
+.sinpadding{
+padding: 0 !important;
+margin: 0 !important;
+}
+.navbar .nav .nav-item a i.c-wh{
+font-size: 18px;
+color: aliceblue;
+}
+.navbar .nav .nav-item a i.c-bl{
+  font-size: 16px;
+  color: rgb(16, 40, 61);
+}
+.nav a.navbar-brand span{
+  color: rgb(241, 120, 21);
+}
+
+/* ___________Slider_________ */
+
+.carousel-caption h5{
+  color: #ff8411;
+  font-size: 45px;
+  font-weight: bold !important;
+}
+.carousel-caption h5::before{
+  content: '';
+  display: inline-block;
+  border-top: solid 20px orangered;
+  width: 100%;
+}
+.carousel-caption h5::after{
+  content: '';
+  display: inline-block;
+  border-bottom: solid 20px orangered;
+  width: 100%;
+}
+
+/* Box title */
+.box_title::before{
+  content: '';
+  display: inline-block;
+  border-top: solid 2px orangered;
+  width: 30%;
+  margin-right: 10px;
+}
+.box_title::after{
+  content: '';
+  display: inline-block;
+  border-bottom: solid 2px orangered;
+  width: 30%;
+  margin-left: 10px;
+}
+
+/* H1 titles */
+.title_h1{
+
+}
+.title_h1::before{
+  /* content: '';
+  display: inline-block;
+  border-top: solid 2px orangered;
+  width: 50%;
+  margin-right: 100px; */
+}
+.title_h1::after{
+  /* content: '';
+  display: inline-block;
+  border-bottom: solid 2px orangered;
+  width: 50%; */
+}
+
+
+
+
+/* Position sticky */
+.sticky_top_edit {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 38px;
+  z-index: 1020;
+  background: white;
+}
+/* Media Queries */
+.logo_sel{
+  max-width:100px;
+}
+@media (max-width: 768px) {
+  .border_complete{
+    width: 100%;
+  }
+  .logo_sel{
+    max-width:150px;
+  }
+}
+
+/* Footer */
+.bg_orange{
+  background-color: #ff8411;
+}
+
+.deep_orange.accent-2 {
+  background-color: rgb(241, 120, 21) !important;
+}
+
+.font-weight-bold {
+  font-weight: 700!important;
+  font-size: 16px;
+  color: white;
+}
+.link_foot{
+  color: rgb(136, 136, 136);
+}
+.link_foot:hover{
+  color: rgb(241, 120, 21);
+}
