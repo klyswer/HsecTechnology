@@ -42,25 +42,70 @@ color: aliceblue;
 }
 
 /* ___________Slider_________ */
-
+.imagen {
+  /* filter: opacity(.8); */
+  /* filter: saturate(180%);*/
+  filter: sepia(60%);
+}
+.carousel-caption{
+  width: 100%;
+  left: 0 !important;
+  right: 0 !important;
+  padding-bottom: 5% !important;
+}
 .carousel-caption h5{
-  color: #ff8411;
+  color: #fc8600;
   font-size: 45px;
   font-weight: bold !important;
+  /* transform: translateY(-50px); */
+  background: rgba(0,0,0, 0.5);
+  width: 100%;
+  /* line-height: 50px; */
 }
 .carousel-caption h5::before{
   content: '';
   display: inline-block;
   border-top: solid 20px orangered;
   width: 100%;
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
 .carousel-caption h5::after{
   content: '';
   display: inline-block;
   border-bottom: solid 20px orangered;
   width: 100%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+.carousel-caption p.parrafo_slider{
+  color: #ffffff;
+
+  position: absolute;
+  top: 100%;
+  right: 50%;
+  transform: translateX(50%);
+  width: 100%;
+
+  font-size: 14px;
+  font-weight: bold !important;
+  /* transform: translateY(-50px); */
+  background: rgba(0,0,0, 0.8);
+  /* width: 50%; */
+  /* line-height: 50px; */
 }
 
+  /* puntos_slider */
+.carousel-indicators li.puntos_slider{
+  background-color: orangered;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+}
+
+
+
+/* slider */
 /* Box title */
 .box_title::before{
   content: '';
@@ -77,25 +122,30 @@ color: aliceblue;
   margin-left: 10px;
 }
 
-/* H1 titles */
-.title_h1{
-
-}
-.title_h1::before{
-  /* content: '';
-  display: inline-block;
-  border-top: solid 2px orangered;
-  width: 50%;
-  margin-right: 100px; */
-}
-.title_h1::after{
-  /* content: '';
+/* Box title-1 */
+.box_title-1::before{
+  content: '';
   display: inline-block;
   border-bottom: solid 2px orangered;
-  width: 50%; */
+  width: 30%;
+  margin-right: 10px;
+}
+.box_title-1::after{
+  content: '';
+  display: inline-block;
+  border-top: solid 2px orangered;
+  width: 30%;
+  margin-left: 10px;
 }
 
-
+/* dropdown Hover styles */
+.dropdown:hover>.dropdown-menu {
+  display: block;
+ 
+}
+.dropdown > .dropdown-toggle:active {
+  pointer-events: none;
+}
 
 
 /* Position sticky */
@@ -106,20 +156,88 @@ color: aliceblue;
   z-index: 1020;
   background: white;
 }
-/* Media Queries */
+
+/* ______ALIANZAS ESTRATEGICAS______ */
+
+
+/* ______GRAFICO CICLE______ */
+.btn_circle{
+display: flex;
+justify-content: center;
+align-items: center;
+position: absolute;
+width: 70px;
+height: 70px;
+border-radius: 100%;
+}
+.btn_circle:hover{
+cursor: pointer;
+width: 80px;
+height: 80px;
+}
+.btn_1{
+  top:25%;
+  right: 25%;
+  background: rgba(255, 140, 0, 0.6);
+  color: #ffffff;
+  }
+  .btn_2{
+    top:50%;
+    right: 20%;
+    background: rgba(0, 128, 0, 0.5);
+    color: #ffffff;
+    }
+    .btn_3{
+      top:65%;
+      right: 42%;
+      color: #ffffff;
+      background: rgba(173, 255, 47, 0.6);
+      }
+      .btn_4{
+        top:50%;
+        right: 65%;
+        color: #ffffff;
+        background: rgba(127, 255, 212, 0.5);
+        }
+        .btn_5{
+          top:25%;
+          right: 60%;
+          background: rgba(0, 119, 255, 0.6);
+          color: #ffffff;
+          }
+
+.grafica_cicle{
+  border: darkorange 2px solid;
+  min-height: 400px;
+  width: 100%;
+}
+
+.grafica_cicle img{
+  width: 100%;
+}
+
+.info_cicle{
+  border: darkorange 2px solid;
+  min-height: 400px;
+  width: 100%;
+}
+
+
+
+/* ---------------Media Queries----------------- */
 .logo_sel{
-  max-width:100px;
+  max-width:150px;
 }
 @media (max-width: 768px) {
   .border_complete{
     width: 100%;
   }
   .logo_sel{
-    max-width:150px;
+    max-width:250px;
   }
 }
 
-/* Footer */
+/* ----------------Footer------------------ */
 .bg_orange{
   background-color: #ff8411;
 }
@@ -138,4 +256,129 @@ color: aliceblue;
 }
 .link_foot:hover{
   color: rgb(241, 120, 21);
+}
+
+
+
+/* Estilos Quienes somos */
+body {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+header.masthead {
+  position: relative;
+  background-color: #343a40;
+  background: url("../img/bg-masthead.jpg") no-repeat center center;
+  background-size: cover;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+header.masthead .overlay {
+  position: absolute;
+  background-color: #212529;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+}
+
+header.masthead h1 {
+  font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+  header.masthead {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
+  header.masthead h1 {
+    font-size: 3rem;
+  }
+}
+
+.showcase .showcase-text {
+  padding: 3rem;
+}
+
+.showcase .showcase-img {
+  min-height: 30rem;
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .showcase .showcase-text {
+    padding: 7rem;
+  }
+}
+
+.features-icons {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.features-icons .features-icons-item {
+  max-width: 20rem;
+}
+
+.features-icons .features-icons-item .features-icons-icon {
+  height: 7rem;
+}
+
+.features-icons .features-icons-item .features-icons-icon i {
+  font-size: 4.5rem;
+}
+
+.features-icons .features-icons-item:hover .features-icons-icon i {
+  font-size: 5rem;
+}
+
+.testimonials {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.testimonials .testimonial-item {
+  max-width: 18rem;
+}
+
+.testimonials .testimonial-item img {
+  max-width: 12rem;
+  -webkit-box-shadow: 0px 5px 5px 0px #adb5bd;
+  box-shadow: 0px 5px 5px 0px #adb5bd;
+}
+
+.call-to-action {
+  position: relative;
+  background-color: #343a40;
+  background: url("../img/bg-masthead.jpg") no-repeat center center;
+  background-size: cover;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.call-to-action .overlay {
+  position: absolute;
+  background-color: #212529;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+}
+
+footer.footer {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }

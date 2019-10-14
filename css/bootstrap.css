@@ -10372,7 +10372,7 @@ a.text-primary:hover, a.text-primary:focus {
 }
 
 .text-secondary {
-  color: #fff !important;
+  color: #ffffff !important;
 }
 
 a.text-secondary:hover, a.text-secondary:focus {
@@ -10632,10 +10632,6 @@ body {
 h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   letter-spacing: 3px;
-}
-
-.text-secondary {
-  color: #919aa1 !important;
 }
 
 th {
