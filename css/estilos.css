@@ -53,16 +53,14 @@ color: aliceblue;
   right: 0 !important;
   padding-bottom: 5% !important;
 }
-.carousel-caption h5{
+.carousel-caption h5.news{
   color: #fc8600;
   font-size: 45px;
   font-weight: bold !important;
-  /* transform: translateY(-50px); */
   background: rgba(0,0,0, 0.5);
   width: 100%;
-  /* line-height: 50px; */
 }
-.carousel-caption h5::before{
+.carousel-caption h5.news::before{
   content: '';
   display: inline-block;
   border-top: solid 20px orangered;
@@ -70,7 +68,7 @@ color: aliceblue;
   margin-left: 50%;
   transform: translateX(-50%);
 }
-.carousel-caption h5::after{
+.carousel-caption h5.news::after{
   content: '';
   display: inline-block;
   border-bottom: solid 20px orangered;
@@ -82,7 +80,7 @@ color: aliceblue;
   color: #ffffff;
   position: absolute;
   top: 85%;
-  min-height: 60px;
+  min-height: 65px;
   right: 50%;
   transform: translateX(50%);
   width: 100%;
@@ -154,7 +152,7 @@ color: aliceblue;
 .sticky_top_edit {
   position: -webkit-sticky;
   position: sticky;
-  top: 38px;
+  top: 50px;
   z-index: 1020;
   background: white;
 }
@@ -389,3 +387,52 @@ footer.footer {
   color: #134263;
   font-weight: 600;
 }
+
+
+/* .selector_cambia{
+ color: #fc8600;
+ background: #ff8411;
+} */
+
+/* Segmento Noticias */
+
+.bg_opac{
+  background: rgba(0, 0, 0, 0.8) !important;
+}
+.jumbotron h1{
+  color: white;
+}
+.jumbotron p{
+  color: white;
+  font-size: 16px;
+}
+
+
+/* segmento Servicios */
+.bg_ss{
+  background: rgb(250, 246, 36);
+}
+.bg_rc{
+  background: rgb(250, 193, 36);
+}
+.bg_ma{
+  background: rgb(250, 163, 36);
+}
+.bg_cc{
+  background: rgb(250, 133, 36);
+}
+.bg_t{
+  background: rgb(250, 103, 36);
+}
+
+.text_white{
+color: white;
+}
+
+.text_servicios{
+color: black;
+/* font-weight: 500; */
+/* font-size: 20px; */
+line-height: 2;
+}
+/* .navbar-expand-md .navbar-nav .dropdown-menu{} */

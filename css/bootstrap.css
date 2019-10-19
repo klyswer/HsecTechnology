@@ -2822,9 +2822,9 @@ fieldset:disabled a.btn {
 }
 
 .btn-light {
-  color: #1a1a1a;
-  background-color: #fff;
-  border-color: #fff;
+  color: #ffffff;
+  background-color: #134263;
+  border-color: #134263;
 }
 
 .btn-light:hover {
@@ -3291,9 +3291,9 @@ input[type="button"].btn-block {
   color: #919aa1;
   text-align: left;
   list-style: none;
-  background-color: #fff;
+  background-color: rgba(19, 66, 99, 0.9); /* edite aquí */
   background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  /* border: 1px solid rgba(0, 0, 0, 0.15); */
   border-radius: 0;
 }
 
@@ -3454,8 +3454,8 @@ input[type="button"].btn-block {
   width: 100%;
   padding: 0.25rem 1.5rem;
   clear: both;
-  font-weight: 400;
-  color: #1a1a1a;
+  font-weight: 500;/* edite aqui */
+  color: #eeeeee; /* edite aqui */
   text-align: inherit;
   white-space: nowrap;
   background-color: transparent;
@@ -3463,9 +3463,10 @@ input[type="button"].btn-block {
 }
 
 .dropdown-item:hover, .dropdown-item:focus {
-  color: #0d0d0d;
+  color: #ffffff;
+  font-weight: 900; /* edite aqui */
   text-decoration: none;
-  background-color: #f8f9fa;
+  /* background-color: #cac8c8;edite aqui */
 }
 
 .dropdown-item.active, .dropdown-item:active {
@@ -4591,6 +4592,7 @@ input[type="button"].btn-block {
   }
   .navbar-expand-md .navbar-nav .dropdown-menu {
     position: absolute;
+    transform: translateX(-130px); /* edite aqui */
   }
   .navbar-expand-md .navbar-nav .nav-link {
     padding-right: 0.5rem;
@@ -5422,8 +5424,8 @@ a.badge-dark:focus, a.badge-dark.focus {
 }
 
 .jumbotron {
-  padding: 2rem 1rem;
-  margin-bottom: 2rem;
+  padding: 1rem 0.5rem;
+  margin-bottom: 1rem;
   background-color: #f7f7f9;
   border-radius: 0;
 }
