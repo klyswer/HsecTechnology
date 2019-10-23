@@ -16,115 +16,126 @@
     <meta name="description" content="">
 </head>
 <body>
-      <!-- modal init-->
+<!-- modal init-->
 
 <div class="modal fade" id="contactar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl" role="document">
-        <div class="modal-content">
-        <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">¿Podemos ayudarte?</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-        </button>
-        </div>
-        <div class="modal-body">
-        <form>
-        <div class="">
-        <div class="col-12 caja_form">
-          <div class="well well-sm">
-              <form class="form-horizontal" method="post">
-                      <div class="form-row">
-                      <!-- segmento formulario -->
-                          <div class="form-group col-sm-12 col-md-12 col-lg-6">
-                              <legend class="text-center header">Consultar</legend>
-        
-                                  <div class="form-group row">
-                                        <div class="col-2 col-2 col-sm-2 col-md-2 col-lg-2 ">
-                                            <span class="col-2 col-2 col-sm-2 col-md-2 col-lg-2  col-md-offset-2 text-center">
-                                                    <i class="fa fa-user bigicon"></i>
-                                            </span>
-                                        </div>
-        
-                                        <div class="form-group row col-5 col-lg-5 col-md-5 col-sm-5">
-                                              <div class="col-lg-12">
-                                                  <input id="fname" name="name" type="text" placeholder="Nombre" class="form-control">
-                                              </div>
-                                        </div>
-        
-                                        <div class="form-group row col-5 col-lg-5 col-md-5 col-sm-5">
-                                              <div class="col-lg-12">
-                                                  <input id="lname" name="name" type="text" placeholder="Apellido" class="form-control">
-                                              </div>
-                                        </div>
-        
-                                  </div>
-        
-                                  <div class="form-group row">
-                                      <div class="col-2 col-sm-2 col-md-2 col-lg-2 ">
-                                          <span class="col-2 col-sm-2 col-md-2 col-lg-2  col-md-offset-2 text-center">
-                                              <i class="fa fa-route bigicon"></i>
-                                          </span>
-                                      </div>
-        
-                                      <div class="col-lg-10 col-10">
-                                          <input id="email" name="email" type="text" placeholder="¿De donde se contácta?" class="form-control">
-                                      </div>
-                                  </div>
-        
-                                  <div class="form-group row">
-                                      <div class="col-2 col-sm-2 col-md-2 col-lg-2 ">
-                                          <span class="col-2 col-sm-2 col-md-2 col-lg-2  col-md-offset-2 text-center">
-                                              <i class="fa fa-envelope bigicon"></i>
-                                          </span>
+    <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content">
+    <div class="modal-header">
+    <h5 class="modal-title" id="exampleModalLabel">¿Podemos ayudarte?</h5>
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+    </button>
+    </div>
+    <div class="modal-body">
+    <form>
+    <div class="">
+    <div class="col-12 caja_form">
+      <div class="well well-sm">
+          <form class="form-horizontal" method="post">
+                  <div class="form-row">
+                  <!-- segmento formulario -->
+                      <div class="form-group col-sm-12 col-md-12 col-lg-6">
+                          <legend class="text-center header">Consultar</legend>
+    
+                              <div class="form-group row">
+                                    <div class="col-2 col-2 col-sm-2 col-md-2 col-lg-2 ">
+                                        <span class="col-2 col-2 col-sm-2 col-md-2 col-lg-2  col-md-offset-2 text-center">
+                                                <i class="fa fa-user bigicon"></i>
+                                        </span>
                                     </div>
-                                      <div class="col-lg-10 col-10">
-                                          <input id="email" name="email" type="text" placeholder="Email" class="form-control">
-                                      </div>
+    
+                                    <div class="form-group row col-5 col-lg-5 col-md-5 col-sm-5">
+                                          <div class="col-lg-12">
+                                              <input id="fname" name="name" type="text" placeholder="Nombre" class="form-control" required>
+                                          </div>
+                                    </div>
+    
+                                    <div class="form-group row col-5 col-lg-5 col-md-5 col-sm-5">
+                                          <div class="col-lg-12">
+                                              <input id="lname" name="lastname" type="text" placeholder="Apellido" class="form-control" required>
+                                          </div>
+                                    </div>
+    
+                              </div>
+    
+                              <div class="form-group row">
+                                  <div class="col-2 col-sm-2 col-md-2 col-lg-2 ">
+                                      <span class="col-2 col-sm-2 col-md-2 col-lg-2  col-md-offset-2 text-center">
+                                          <i class="fa fa-route bigicon"></i>
+                                      </span>
                                   </div>
-                                  <div class="form-group row">
-                                      <div class="col-2 col-sm-2 col-md-2 col-lg-2 ">
-                                          <span class="col-2 col-sm-2 col-md-2 col-lg-2  col-md-offset-2 text-center">
-                                            <i class="fa fa-phone-square bigicon"></i>
-                                          </span>
-                                      </div>
-                                      <div class="col-lg-10 col-10">
-                                          <input id="phone" name="phone" type="text" placeholder="Número de contacto" class="form-control">
-                                      </div>
-                                      
+    
+                                  <div class="col-lg-10 col-10">
+                                      <input id="addres" name="addres" type="text" placeholder="¿De donde se contácta?" class="form-control">
                                   </div>
-                                  <div class="form-group row">
-                                      <span class="col-2 col-sm-2 col-md-2 col-lg-2  col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
-                                      <div class="col-10 col-lg-10">
-                                          <textarea class="form-control" id="message" name="message" placeholder="Escriba su comentario" rows="4"></textarea>
-                                      </div>
-                                  </div>
-                          </div>
-                          <!-- segmento imagen mapa -->
-                          <div class="form-group col-sm-12 col-md-12 col-lg-6">
-                            <legend class="text-center header">Región (sede)</legend>
-                                <div class="text-center caja_img col" >
-                                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1664.8504104030599!2d-70.71129729946767!3d-33.43104349830114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c40c744e9e2f%3A0x5bf151adb6be602d!2sJuana+Quinel+1611%2C+Quinta+Normal%2C+Regi%C3%B3n+Metropolitana!5e0!3m2!1ses-419!2scl!4v1564551403031!5m2!1ses-419!2scl" width="300" height="360" frameborder="0" style="border:0" allowfullscreen></iframe>                   
+                              </div>
+    
+                              <div class="form-group row">
+                                  <div class="col-2 col-sm-2 col-md-2 col-lg-2 ">
+                                      <span class="col-2 col-sm-2 col-md-2 col-lg-2  col-md-offset-2 text-center">
+                                          <i class="fa fa-envelope bigicon"></i>
+                                      </span>
                                 </div>
-                        </div>
-        
-                      <div class="form-group col">
-                          <div class="text-center">
-                              <button type="submit" class="btn btn-primary btn-lg">
-                                  contactar
-                              </button>
-                          </div>
+                                  <div class="col-lg-10 col-10">
+                                      <input id="email" name="email" type="email" placeholder="Email" class="form-control">
+                                  </div>
+                              </div>
+                              <div class="form-group row">
+                                  <div class="col-2 col-sm-2 col-md-2 col-lg-2 ">
+                                      <span class="col-2 col-sm-2 col-md-2 col-lg-2  col-md-offset-2 text-center">
+                                        <i class="fa fa-phone-square bigicon"></i>
+                                      </span>
+                                  </div>
+                                  <div class="col-lg-10 col-10">
+                                      <input id="phone" name="phone" type="text" placeholder="Número de contacto" class="form-control">
+                                  </div>
+                                  
+                              </div>
+                              <div class="form-group row">
+                                  <span class="col-2 col-sm-2 col-md-2 col-lg-2  col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+                                  <div class="col-10 col-lg-10">
+                                      <textarea class="form-control" id="message" name="message" placeholder="Escriba su comentario" rows="4"></textarea>
+                                  </div>
+                              </div>
+                      </div>
+                      <!-- segmento imagen mapa -->
+                      
+                      <div class="form-group col-sm-12 col-md-12 col-lg-6">
+                        <legend class="text-center header">Región Valparaíso, Los Andes - San Felipe</legend>
+                            <div class="text-center caja_img col" >
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11279.393253845303!2d-70.65397639202261!3d-32.8085975783493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96880512e0914ea9%3A0x95f0d4af496d8c8!2sSan%20Felipe%20-%20Los%20Andes%2C%20Regi%C3%B3n%20de%20Valpara%C3%ADso!5e0!3m2!1ses!2scl!4v1571767603788!5m2!1ses!2scl" width="300" height="360" frameborder="0" style="border:0;" allowfullscreen="">
+                                </iframe>
+
+                                  <p>
+                                    <i class="fas fa-phone mr-3 mt-5"></i>+56 9 7386 1836/+56 9 6249 3111
+                                  </p>
+                                  <p>
+                                    <i class="fas fa-envelope mr-3"></i>jorge.jimenez@hsectechnology.com
+                                  </p>
+
+                            </div>
+                            
+                    </div>
+    
+                  <div class="form-group col">
+                      <div class="text-center">
+                          <button type="submit" class="btn btn-primary btn-lg">
+                              contactar
+                          </button>
                       </div>
                   </div>
-              </form>
-          </div>
-        </div>
-        </div>
-        </form>
-        </div>
-        </div>
-        </div>
-        </div>
-          <!-- modal End -->
+              </div>
+          </form>
+      </div>
+    </div>
+    </div>
+    </form>
+    </div>
+    </div>
+    </div>
+    </div>
+    <!-- modal End -->
     <!-- Bar before Menu -->
     
 <nav class="navbar sticky-top navbar-dark bg-light justify-content-end sinpadding">
@@ -219,7 +230,7 @@
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active" data-interval="3000">
-              <img src="image/mine-462318_1280.jpg" class="d-block w-100 imagen" style="max-height: 415px" alt="...">
+              <img src="Servicios/img_services/CambioCultural2.jpg" class="d-block w-100 " style="max-height: 550px" alt="...">
               <div class="carousel-caption d-none d-md-block">
                 <!-- <h5>Proximo curso, Perú</h5>
                 <p class="align-middle">Identificación y monitoreo de controles críticos de riesgos del negocio - Metodología BOW TIE.
@@ -228,14 +239,14 @@
               </div>
             </div>
             <div class="carousel-item" data-interval="3000">
-              <img src="image/construction-2578410_1280edit.jpg" class="d-block w-100 imagen" style="max-height: 415px" alt="...">
+              <img src="Servicios/img_services/RN2.jpg" class="d-block w-100 " style="max-height: 550px" alt="...">
               <div class="carousel-caption d-none d-md-block">
                 <!-- <h5>Liderazgo para una cultura Resiliente</h5>
                 <p class="">Tenemos la convicción que La Cero Fatalidad en la industria se puede lograr, a través de un liderazgo que impulse una cultura organizacional resiliente y preventiva.</p> -->
               </div>
             </div>
             <div class="carousel-item" data-interval="3000">
-              <img src="image/excavators-1050501_1280_edit.jpg" class="d-block w-100 imagen" style="max-height: 415px" alt="...">
+              <img src="Servicios/img_services/SSO2.jpg" class="d-block w-100 " style="max-height: 550px" alt="...">
               <div class="carousel-caption d-none d-md-block">
                 <!-- <h5>Especialistas en estrategias para la Cero Fatalidad</h5>
                 <p class="">Somos especialistas con experiencia práctica en la definición e implementación de modelos para lograr mantener la cero fatalidad, incorporando las mejopres prácticas y tecnolgías existentes.</p> -->
@@ -350,9 +361,10 @@
                 <i class="fas fa-envelope mr-3"></i> <small>jorge.jimenez@hsectechnology.com</small> 
               </p>
               <p>
-                <i class="fas fa-phone mr-3"></i> +56 9 7386 1836</p>
+                <i class="fas fa-phone mr-3"></i><small>+56 9 7386 1836</small>
+              </p>
               <p>
-                <i class="fas fa-print mr-3"></i> +56 9 6249 3111
+                <i class="fas fa-phone mr-3"></i><small>+56 9 6249 3111</small> 
               </p>
             </div>
             <!-- Grid column -->
