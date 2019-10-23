@@ -19,119 +19,131 @@
 <!-- modal init-->
 
 <div class="modal fade" id="contactar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-    <div class="modal-content">
-    <div class="modal-header">
-    <h5 class="modal-title" id="exampleModalLabel">¿Podemos ayudarte?</h5>
-    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-    <span aria-hidden="true">&times;</span>
-    </button>
-    </div>
-    <div class="modal-body">
-    <form>
-    <div class="">
-    <div class="col-12 caja_form">
-      <div class="well well-sm">
-          <form class="form-horizontal" method="post">
-                  <div class="form-row">
-                  <!-- segmento formulario -->
-                      <div class="form-group col-sm-12 col-md-12 col-lg-6">
-                          <legend class="text-center header">Consultar</legend>
-    
-                              <div class="form-group row">
-                                    <div class="col-2 col-2 col-sm-2 col-md-2 col-lg-2 ">
-                                        <span class="col-2 col-2 col-sm-2 col-md-2 col-lg-2  col-md-offset-2 text-center">
-                                                <i class="fa fa-user bigicon"></i>
-                                        </span>
-                                    </div>
-    
-                                    <div class="form-group row col-5 col-lg-5 col-md-5 col-sm-5">
-                                          <div class="col-lg-12">
-                                              <input id="fname" name="name" type="text" placeholder="Nombre" class="form-control">
-                                          </div>
-                                    </div>
-    
-                                    <div class="form-group row col-5 col-lg-5 col-md-5 col-sm-5">
-                                          <div class="col-lg-12">
-                                              <input id="lname" name="name" type="text" placeholder="Apellido" class="form-control">
-                                          </div>
-                                    </div>
-    
-                              </div>
-    
-                              <div class="form-group row">
-                                  <div class="col-2 col-sm-2 col-md-2 col-lg-2 ">
-                                      <span class="col-2 col-sm-2 col-md-2 col-lg-2  col-md-offset-2 text-center">
-                                          <i class="fa fa-route bigicon"></i>
-                                      </span>
-                                  </div>
-    
-                                  <div class="col-lg-10 col-10">
-                                      <input id="email" name="email" type="text" placeholder="¿De donde se contácta?" class="form-control">
-                                  </div>
-                              </div>
-    
-                              <div class="form-group row">
-                                  <div class="col-2 col-sm-2 col-md-2 col-lg-2 ">
-                                      <span class="col-2 col-sm-2 col-md-2 col-lg-2  col-md-offset-2 text-center">
-                                          <i class="fa fa-envelope bigicon"></i>
-                                      </span>
+<div class="modal-dialog modal-xl" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="exampleModalLabel">¿Podemos ayudarte?</h5>
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+<div class="modal-body">
+<form>
+<div class="">
+<div class="col-12 caja_form">
+  <div class="well well-sm">
+      <form class="form-horizontal" method="post">
+              <div class="form-row">
+              <!-- segmento formulario -->
+                  <div class="form-group col-sm-12 col-md-12 col-lg-6">
+                      <legend class="text-center header">Consultar</legend>
+
+                          <div class="form-group row">
+                                <div class="col-2 col-2 col-sm-2 col-md-2 col-lg-2 ">
+                                    <span class="col-2 col-2 col-sm-2 col-md-2 col-lg-2  col-md-offset-2 text-center">
+                                            <i class="fa fa-user bigicon"></i>
+                                    </span>
                                 </div>
-                                  <div class="col-lg-10 col-10">
-                                      <input id="email" name="email" type="text" placeholder="Email" class="form-control">
-                                  </div>
+
+                                <div class="form-group row col-5 col-lg-5 col-md-5 col-sm-5">
+                                      <div class="col-lg-12">
+                                          <input id="fname" name="name" type="text" placeholder="Nombre" class="form-control" required>
+                                      </div>
+                                </div>
+
+                                <div class="form-group row col-5 col-lg-5 col-md-5 col-sm-5">
+                                      <div class="col-lg-12">
+                                          <input id="lname" name="lastname" type="text" placeholder="Apellido" class="form-control" required>
+                                      </div>
+                                </div>
+
+                          </div>
+
+                          <div class="form-group row">
+                              <div class="col-2 col-sm-2 col-md-2 col-lg-2 ">
+                                  <span class="col-2 col-sm-2 col-md-2 col-lg-2  col-md-offset-2 text-center">
+                                      <i class="fa fa-route bigicon"></i>
+                                  </span>
                               </div>
-                              <div class="form-group row">
-                                  <div class="col-2 col-sm-2 col-md-2 col-lg-2 ">
-                                      <span class="col-2 col-sm-2 col-md-2 col-lg-2  col-md-offset-2 text-center">
-                                        <i class="fa fa-phone-square bigicon"></i>
-                                      </span>
-                                  </div>
-                                  <div class="col-lg-10 col-10">
-                                      <input id="phone" name="phone" type="text" placeholder="Número de contacto" class="form-control">
-                                  </div>
-                                  
+
+                              <div class="col-lg-10 col-10">
+                                  <input id="addres" name="addres" type="text" placeholder="¿De donde se contácta?" class="form-control">
                               </div>
-                              <div class="form-group row">
-                                  <span class="col-2 col-sm-2 col-md-2 col-lg-2  col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
-                                  <div class="col-10 col-lg-10">
-                                      <textarea class="form-control" id="message" name="message" placeholder="Escriba su comentario" rows="4"></textarea>
-                                  </div>
-                              </div>
-                      </div>
-                      <!-- segmento imagen mapa -->
-                      <div class="form-group col-sm-12 col-md-12 col-lg-6">
-                        <legend class="text-center header">Región (sede)</legend>
-                            <div class="text-center caja_img col" >
-                              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1664.8504104030599!2d-70.71129729946767!3d-33.43104349830114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c40c744e9e2f%3A0x5bf151adb6be602d!2sJuana+Quinel+1611%2C+Quinta+Normal%2C+Regi%C3%B3n+Metropolitana!5e0!3m2!1ses-419!2scl!4v1564551403031!5m2!1ses-419!2scl" width="300" height="360" frameborder="0" style="border:0" allowfullscreen></iframe>                   
+                          </div>
+
+                          <div class="form-group row">
+                              <div class="col-2 col-sm-2 col-md-2 col-lg-2 ">
+                                  <span class="col-2 col-sm-2 col-md-2 col-lg-2  col-md-offset-2 text-center">
+                                      <i class="fa fa-envelope bigicon"></i>
+                                  </span>
                             </div>
-                    </div>
-    
-                  <div class="form-group col">
-                      <div class="text-center">
-                          <button type="submit" class="btn btn-primary btn-lg">
-                              contactar
-                          </button>
-                      </div>
+                              <div class="col-lg-10 col-10">
+                                  <input id="email" name="email" type="email" placeholder="Email" class="form-control">
+                              </div>
+                          </div>
+                          <div class="form-group row">
+                              <div class="col-2 col-sm-2 col-md-2 col-lg-2 ">
+                                  <span class="col-2 col-sm-2 col-md-2 col-lg-2  col-md-offset-2 text-center">
+                                    <i class="fa fa-phone-square bigicon"></i>
+                                  </span>
+                              </div>
+                              <div class="col-lg-10 col-10">
+                                  <input id="phone" name="phone" type="text" placeholder="Número de contacto" class="form-control">
+                              </div>
+                              
+                          </div>
+                          <div class="form-group row">
+                              <span class="col-2 col-sm-2 col-md-2 col-lg-2  col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+                              <div class="col-10 col-lg-10">
+                                  <textarea class="form-control" id="message" name="message" placeholder="Escriba su comentario" rows="4"></textarea>
+                              </div>
+                          </div>
+                  </div>
+                  <!-- segmento imagen mapa -->
+                  
+                  <div class="form-group col-sm-12 col-md-12 col-lg-6">
+                    <legend class="text-center header">Región Valparaíso, Los Andes - San Felipe</legend>
+                        <div class="text-center caja_img col" >
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11279.393253845303!2d-70.65397639202261!3d-32.8085975783493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96880512e0914ea9%3A0x95f0d4af496d8c8!2sSan%20Felipe%20-%20Los%20Andes%2C%20Regi%C3%B3n%20de%20Valpara%C3%ADso!5e0!3m2!1ses!2scl!4v1571767603788!5m2!1ses!2scl" width="300" height="360" frameborder="0" style="border:0;" allowfullscreen="">
+                            </iframe>
+
+                              <p>
+                                <i class="fas fa-phone mr-3 mt-5"></i>+56 9 7386 1836/+56 9 6249 3111
+                              </p>
+                              <p>
+                                <i class="fas fa-envelope mr-3"></i>jorge.jimenez@hsectechnology.com
+                              </p>
+
+                        </div>
+                        
+                </div>
+
+              <div class="form-group col">
+                  <div class="text-center">
+                      <button type="submit" class="btn btn-primary btn-lg">
+                          contactar
+                      </button>
                   </div>
               </div>
-          </form>
-      </div>
-    </div>
-    </div>
-    </form>
-    </div>
-    </div>
-    </div>
-    </div>
-    <!-- modal End -->
+          </div>
+      </form>
+  </div>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+<!-- modal End -->
+
     <!-- Bar before Menu -->
 
 <nav class="navbar sticky-top navbar-dark bg-light justify-content-end sinpadding">
   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactar" data-cotiz="idProduct1">Contacto</button>
         <ul class="nav">
             <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fab fa-linkedin-in c-wh"></i></a>
+                <a class="nav-link" href="https://www.linkedin.com/in/jorge-jimenez-baeza-829b3b29/"><i class="fab fa-linkedin-in c-wh"></i></a>
             </li>
             
             <li class="nav-item">
@@ -139,7 +151,7 @@
             </li>
                 
             <li class="nav-item">
-                    <a class="nav-link" href="#"> <i class="fab fa-twitter c-wh"></i></a>
+                    <a class="nav-link" href="https://twitter.com/@jorgeemerson_jb"> <i class="fab fa-twitter c-wh"></i></a>
             </li>
         </ul>
 </nav>
@@ -312,15 +324,17 @@
 </div>
 <div class="container mb-5">
     <p class="text-center lead">
-      Contamos con amplia experiencia en el rubro minero, más de 20 años de trayectoria sudamericana.
+      Contamos con amplia experiencia en el rubro minero, consultores con más de 20 años de experiencia en materias HSEC mineria en Chile y sudamerica.
     </p>
 </div>
 <div class="card-deck">
     <div class="card" style="border: none;">
       <img class="card-img-top" src="image/seccion-2.1e.jpg" alt="Card image cap">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <h5 class="card-title">Haul Truck</h5>
+        <!-- <p class="card-text">
+          This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+        </p> -->
       </div>
       <!-- <div class="card-footer" style="border-radius: 0 0 100px 100px;">
         <small class="text-muted">Last updated 3 mins ago</small>
@@ -329,8 +343,10 @@
     <div class="card" style="border: none;">
       <img class="card-img-top" src="image/seccion-2.2e.jpg" alt="Card image cap">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        <h5 class="card-title">chuquicamata</h5>
+        <!-- <p class="card-text">
+          This card has supporting text below as a natural lead-in to additional content.
+        </p> -->
       </div>
       <!-- <div class="card-footer" style="border-radius: 0 0 100px 100px;">
         <small class="text-muted">Last updated 3 mins ago</small>
@@ -339,8 +355,10 @@
     <div class="card" style="border: none;">
       <img class="card-img-top" src="image/Seccion-2.3e.jpg" alt="Card image cap">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        <h5 class="card-title">Placas de cobre</h5>
+        <!-- <p class="card-text">
+          This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.
+        </p> -->
       </div>
       <!-- <div class="card-footer" style="border-radius: 0 0 100px 100px;">
         <small class="text-muted">Last updated 3 mins ago</small>
@@ -349,8 +367,10 @@
     <div class="card" style="border: none;">
         <img class="card-img-top" src="image/Seccion-2.4e.jpg" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          <h5 class="card-title">Moldeo</h5>
+          <!-- <p class="card-text">
+            This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.
+          </p> -->
         </div>
         <!-- <div class="card-footer" style="border-radius: 0 0 100px 100px;">
           <small class="text-muted">Last updated 3 mins ago</small>
@@ -369,7 +389,9 @@
                 <i class="far fa-handshake icon-screen-desktop m-auto text-secondary"></i>
               </div>
               <h3 class="text-secondary">Integridad</h3>
-              <p class="lead mb-0">Amplia trayectoria en el rubro.</p>
+              <p class="lead mb-0">
+                Responsables, éticos y cumplimos lo que nos comprometemos.
+              </p>
             </div>
           </div>
           <div class="col-lg-4">
@@ -381,7 +403,9 @@
                 
               </div>
               <h3 class="text-secondary">Compromiso</h3>
-              <p class="lead mb-0">Siempre estamos operativos para cumplir la demanda de nuestros clientes.</p>
+              <p class="lead mb-0">
+                Nos comprometemos en mente y corazón con nuestros clientes en cada desafío que emprendemos.
+              </p>
             </div>
           </div>
           <div class="col-lg-4">
@@ -390,7 +414,9 @@
                 <i class="fa fa-star m-auto text-secondary"></i>
               </div>
               <h3 class="text-secondary">Excelencia</h3>
-              <p class="lead mb-0">Todos nuestros clientes reciben sus productos en el tiempo solicitado.</p>
+              <p class="lead mb-0">
+                Todos nuestros servicios son de la mayor calidad técnica, aprendemos continuamente para compartir experiencias.
+              </p>
             </div>
           </div>
           <div class="col-lg-4">
@@ -399,7 +425,9 @@
                   <i class="fa fa-brain m-auto text-secondary"></i>
                 </div>
                 <h3 class="text-secondary">Creatividad</h3>
-                <p class="lead mb-0">Todos nuestros clientes reciben sus productos en el tiempo solicitado.</p>
+                <p class="lead mb-0">
+                  Somos agentes de cambio, proponemos soluciones innovadoras y prácticas, utilizando la tecnología como uno de nuestros ejes estratégicos.
+                </p>
               </div>
             </div>
             <div class="col-lg-4">
@@ -408,7 +436,9 @@
                   <i class="fa fa-people-carry m-auto text-secondary"></i>
                 </div>
                 <h3 class="text-secondary">Trabajo en equipo</h3>
-                <p class="lead mb-0">Todos nuestros clientes reciben sus productos en el tiempo solicitado.</p>
+                <p class="lead mb-0">
+                  Valoramos el trabajo en equipo como elemento central para el logro de nuestros objetivos.
+                </p>
               </div>
             </div>
         </div>
@@ -505,9 +535,10 @@
             <i class="fas fa-envelope mr-3"></i> <small>jorge.jimenez@hsectechnology.com</small> 
           </p>
           <p>
-            <i class="fas fa-phone mr-3"></i> +56 9 7386 1836</p>
+            <i class="fas fa-phone mr-3"></i><small>+56 9 7386 1836</small>
+          </p>
           <p>
-            <i class="fas fa-print mr-3"></i> +56 9 6249 3111
+            <i class="fas fa-phone mr-3"></i><small>+56 9 6249 3111</small> 
           </p>
         </div>
         <!-- Grid column -->
